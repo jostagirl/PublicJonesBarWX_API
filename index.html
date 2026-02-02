@@ -42,6 +42,28 @@
         </p>
       </section>
 
+      <section aria-labelledby="system-status-title">
+        <h2 id="system-status-title">System status notes</h2>
+        <p>
+          If the timestamps above appear stale, it can be caused by any of the following:
+        </p>
+        <ul>
+          <li><strong>Upstream ingestion paused:</strong> no new readings are being collected.</li>
+          <li><strong>Publishing paused:</strong> exports are not currently being pushed to GitHub.</li>
+          <li><strong>GitHub Pages delays:</strong> GitHub may be experiencing deployment backlog or incidents.</li>
+        </ul>
+        <p>
+          GitHub status page:
+          <a href="https://www.githubstatus.com" rel="noopener noreferrer" target="_blank">githubstatus.com</a>
+        </p>
+        <p>
+          <small>
+            This site is served by GitHub Pages. During GitHub Actions or Pages incidents, updates may pause even if the
+            private database is continuing to collect data normally.
+          </small>
+        </p>
+      </section>
+
       <hr>
 
       <section aria-labelledby="about">
@@ -52,7 +74,7 @@
         </p>
         <ul>
           <li><strong>Source:</strong> Davis WeatherLink API</li>
-          <li><strong>Collection interval:</strong> approximately every 15 minutes</li>
+          <li><strong>Collection interval:</strong> typically every 15 minutes</li>
           <li><strong>Published window:</strong> most recent 7 days</li>
           <li><strong>Public access:</strong> static files only (no direct database access)</li>
         </ul>
@@ -147,3 +169,4 @@
     </script>
   </body>
 </html>
+
